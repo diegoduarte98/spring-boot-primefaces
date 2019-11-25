@@ -1,12 +1,22 @@
 package br.com.example.springbootprimefaces;
 
+import java.util.Arrays;
+import java.util.List;
+
 import javax.inject.Named;
+
+import lombok.Getter;
+import lombok.Setter;
 
 @Named
 public class HelloWorld {
 
   private String firstName = "John";
   private String lastName = "Doe";
+  
+  @Getter
+  @Setter
+  private List<String> lista = Arrays.asList("Uva", "Banana", "Laranja");
 
   public String getFirstName() {
     return firstName;
