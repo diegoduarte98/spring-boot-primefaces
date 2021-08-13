@@ -1,14 +1,15 @@
 package br.com.example.springbootprimefaces;
 
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.stereotype.Component;
+
+import javax.faces.view.ViewScoped;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.inject.Named;
-
-import lombok.Getter;
-import lombok.Setter;
-
-@Named
+@Component
+@ViewScoped
 public class HelloWorld {
 
   private String firstName = "John";

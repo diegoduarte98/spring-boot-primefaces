@@ -1,5 +1,5 @@
 joinfaces:
   jsf:
     PROJECT_STAGE: Development
-  primefaces: 
-    theme: omega
+  primefaces:
+    theme: overcast
